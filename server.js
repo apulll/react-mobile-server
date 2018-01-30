@@ -2,7 +2,7 @@
 * @Author: perry
 * @Date:   2018-01-26 10:43:44
 * @Last Modified by:   perry
-* @Last Modified time: 2018-01-28 17:45:34
+* @Last Modified time: 2018-01-30 15:33:35
 */
 const express = require('express');
 const session = require('express-session');
@@ -18,10 +18,9 @@ const publicPath = path.resolve(__dirname,'build');
 
 const app = express();
 
-
 app.use(express.static(publicPath))
 
-app.set('views', path.join(__dirname,'build'));
+app.set('views', path.join(__dirname,'./build'));
 app.engine('.html', ejs.__express);
 app.set('view engine', 'html');
 

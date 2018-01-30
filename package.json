@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "start": "nodemon server.js",
-    "test": "test"
+    "test": "test",
+    "pm2-start": "pm2 start --no-daemon process.json --env production"
   },
   "author": "Capul",
   "license": "MIT",

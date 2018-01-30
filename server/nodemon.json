@@ -1,0 +1,10 @@
+{
+  "verbose": false,
+  "watch": [
+    "controllers/",
+    "middleware/",
+    "routes/",
+    "utils/",
+    "server.js"
+  ]
+}
